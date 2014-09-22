@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NjH-Yl-XuU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="g7R-5W-bRX">
+            <objects>
+                <viewController id="NjH-Yl-XuU" customClass="INLoginController" customModule="intimate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20v-Or-FEq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vtd-3R-Pfb"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="WlB-D8-S8i" customClass="TPKeyboardAvoidingScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-lS-Slg" userLabel="Float Labeled Text Field - accout" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="200" y="205" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-qW-Bi0" userLabel="Float Labeled Text Field - psw" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="200" y="251" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-CT-Lqq">
+                                <rect key="frame" x="200" y="308" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
+                    <connections>
+                        <outlet property="accountTextField" destination="OZP-lS-Slg" id="GIs-4g-DbS"/>
+                        <outlet property="backgroundScroollView" destination="WlB-D8-S8i" id="KXP-qw-96h"/>
+                        <outlet property="loginButton" destination="2w2-CT-Lqq" id="INA-ou-xzs"/>
+                        <outlet property="passwordTextField" destination="4rc-qW-Bi0" id="lht-KQ-1cp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHO-Zq-Hit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="448"/>
+        </scene>
+    </scenes>
+</document>
