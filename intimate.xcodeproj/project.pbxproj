@@ -23,6 +23,7 @@
 		F96E34EF19D29F1E00DD3249 /* tabbar_me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F96E34ED19D29F1E00DD3249 /* tabbar_me@2x.png */; };
 		F96E34F119D2A3F300DD3249 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F96E34F019D2A3F300DD3249 /* README.md */; };
 		F96E34F319D2AF3E00DD3249 /* tabbar_bridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F96E34F219D2AF3E00DD3249 /* tabbar_bridge@2x.png */; };
+		F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34F519D2C0C400DD3249 /* INColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F96E34ED19D29F1E00DD3249 /* tabbar_me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_me@2x.png"; sourceTree = "<group>"; };
 		F96E34F019D2A3F300DD3249 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F96E34F219D2AF3E00DD3249 /* tabbar_bridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_bridge@2x.png"; sourceTree = "<group>"; };
+		F96E34F519D2C0C400DD3249 /* INColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F96E34F019D2A3F300DD3249 /* README.md */,
+				F96E34F419D2C08200DD3249 /* Extensions */,
 				F96E34D519CFC7BC00DD3249 /* Data */,
 				F96E34D419CFC79100DD3249 /* Resource */,
 				F96E34D319CFC76A00DD3249 /* Storyboard */,
@@ -225,6 +228,14 @@
 				F96E34ED19D29F1E00DD3249 /* tabbar_me@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		F96E34F419D2C08200DD3249 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F96E34F519D2C0C400DD3249 /* INColor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			files = (
 				F96E34F119D2A3F300DD3249 /* README.md in Sources */,
 				F96E34E019CFD61400DD3249 /* INRootManager.swift in Sources */,
+				F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */,
 				F96E34E719D25AB400DD3249 /* INTabbarController.swift in Sources */,
 				F96E34B219CFC11200DD3249 /* intimate.xcdatamodeld in Sources */,
 				F96E34DC19CFCCC000DD3249 /* INLoginController.swift in Sources */,

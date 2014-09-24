@@ -32,7 +32,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fLb-ZF-frK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="aBB-a5-iuL" kind="relationship" relationship="rootViewController" id="Nj6-Wf-2gR"/>
@@ -71,7 +70,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
                         <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
@@ -120,7 +118,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e4E-qE-p8V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="k7C-UX-JRo" kind="relationship" relationship="rootViewController" id="jNa-mq-pNm"/>
@@ -138,7 +135,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPR-B4-xIu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Cxg-7J-U8L" kind="relationship" relationship="rootViewController" id="Bro-wg-nD9"/>
@@ -150,8 +146,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tabbar_bridge.png" width="32" height="32"/>
-        <image name="tabbar_honey.png" width="32" height="32"/>
-        <image name="tabbar_me.png" width="32" height="32"/>
+        <image name="tabbar_bridge.png" width="24" height="24"/>
+        <image name="tabbar_honey.png" width="24" height="24"/>
+        <image name="tabbar_me.png" width="24" height="24"/>
     </resources>
 </document>

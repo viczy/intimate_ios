@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        var rootManager = INRootManager.sharedInstance()
 //        rootManager.loginRoot()
+        applyStylesheet()
 
         return true
     }
@@ -108,6 +109,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+
+    //style custom
+
+    func applyStylesheet () {
+        //navigationbar
+        UINavigationBar.appearance().barTintColor = UIColor.earthRed()
+
+        //tabbar
+        UITabBar.appearance().barTintColor = UIColor.skyBlue()
     }
 
 }
