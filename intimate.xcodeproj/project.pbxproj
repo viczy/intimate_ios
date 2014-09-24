@@ -24,6 +24,8 @@
 		F96E34F119D2A3F300DD3249 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F96E34F019D2A3F300DD3249 /* README.md */; };
 		F96E34F319D2AF3E00DD3249 /* tabbar_bridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F96E34F219D2AF3E00DD3249 /* tabbar_bridge@2x.png */; };
 		F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34F519D2C0C400DD3249 /* INColor.swift */; };
+		F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */; };
+		F96E34FE19D2CE9200DD3249 /* INBridgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		F96E34F019D2A3F300DD3249 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F96E34F219D2AF3E00DD3249 /* tabbar_bridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_bridge@2x.png"; sourceTree = "<group>"; };
 		F96E34F519D2C0C400DD3249 /* INColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INColor.swift; sourceTree = "<group>"; };
+		F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeController.swift; sourceTree = "<group>"; };
+		F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		F96E34D119CFC68500DD3249 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F96E34F719D2CB7E00DD3249 /* Bridge */,
 				F96E34E319D25A3A00DD3249 /* Tabbar */,
 				F96E34DE19CFD5F300DD3249 /* Manager */,
 				F96E34D619CFC85E00DD3249 /* Login */,
@@ -236,6 +241,23 @@
 				F96E34F519D2C0C400DD3249 /* INColor.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F96E34F719D2CB7E00DD3249 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				F96E34FC19D2CE7600DD3249 /* BridgeCell */,
+				F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
+		F96E34FC19D2CE7600DD3249 /* BridgeCell */ = {
+			isa = PBXGroup;
+			children = (
+				F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */,
+			);
+			name = BridgeCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,9 +403,11 @@
 				F96E34F119D2A3F300DD3249 /* README.md in Sources */,
 				F96E34E019CFD61400DD3249 /* INRootManager.swift in Sources */,
 				F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */,
+				F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */,
 				F96E34E719D25AB400DD3249 /* INTabbarController.swift in Sources */,
 				F96E34B219CFC11200DD3249 /* intimate.xcdatamodeld in Sources */,
 				F96E34DC19CFCCC000DD3249 /* INLoginController.swift in Sources */,
+				F96E34FE19D2CE9200DD3249 /* INBridgeCell.swift in Sources */,
 				F96E34AF19CFC11100DD3249 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

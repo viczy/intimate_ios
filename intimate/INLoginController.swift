@@ -35,6 +35,7 @@ class INLoginController: UIViewController, UITextFieldDelegate {
 
     // MARK: Configuration
     func configureSubView() {
+        NSLog("%@", self.view.description)
         accountTextField!.placeholder = "账号"
         accountTextField!.clearButtonMode = .WhileEditing
         passwordTextField!.placeholder = "密码"
@@ -43,7 +44,7 @@ class INLoginController: UIViewController, UITextFieldDelegate {
         loginButton!.layer.cornerRadius = 5
         loginButton!.layer.borderWidth = 1.0
         loginButton!.layer.borderColor = UIColor.whiteColor().CGColor
-        loginButton!.addTarget(self, action: Selector(loginAction()), forControlEvents:UIControlEvents.TouchUpInside)
+//        loginButton!.addTarget(self, action: Selector(loginAction()), forControlEvents:UIControlEvents.TouchUpInside)
     }
 
     //MARK: UITextfieldDelegate

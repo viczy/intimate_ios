@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R0G-xe-BLp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--ME-->
@@ -85,17 +86,46 @@
         <!--Root View Controller-->
         <scene sceneID="4gO-uC-akL">
             <objects>
-                <tableViewController id="k7C-UX-JRo" sceneMemberID="viewController">
+                <tableViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="k7C-UX-JRo" customClass="INBridgeController" customModule="intimate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="X46-UK-uI5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8LP-HE-cgS">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="INBridgeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="INBridgeCell" id="8LP-HE-cgS" customClass="INBridgeCell" customModule="intimate" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8LP-HE-cgS" id="KIT-ac-Sp7">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-Yv-xFy">
+                                            <rect key="frame" x="18" y="18" width="584" height="7"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TcN-Yv-xFy" secondAttribute="bottom" constant="10" id="0YY-PH-2if"/>
+                                        <constraint firstItem="TcN-Yv-xFy" firstAttribute="trailing" secondItem="KIT-ac-Sp7" secondAttribute="trailingMargin" constant="10" id="6FX-tf-XeE"/>
+                                        <constraint firstItem="TcN-Yv-xFy" firstAttribute="top" secondItem="KIT-ac-Sp7" secondAttribute="topMargin" constant="1" id="83Z-YL-kbf"/>
+                                        <constraint firstItem="TcN-Yv-xFy" firstAttribute="top" secondItem="KIT-ac-Sp7" secondAttribute="topMargin" constant="10" id="lia-9r-iMX"/>
+                                        <constraint firstItem="TcN-Yv-xFy" firstAttribute="top" secondItem="KIT-ac-Sp7" secondAttribute="topMargin" constant="10" id="mrE-LM-f5e"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TcN-Yv-xFy" secondAttribute="bottom" constant="-1" id="q9I-bN-Qhd"/>
+                                        <constraint firstItem="TcN-Yv-xFy" firstAttribute="leading" secondItem="KIT-ac-Sp7" secondAttribute="leadingMargin" constant="10" id="syJ-Cu-wED"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TcN-Yv-xFy" secondAttribute="bottom" constant="10" id="z4L-Ug-xH5"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="83Z-YL-kbf"/>
+                                            <exclude reference="lia-9r-iMX"/>
+                                            <exclude reference="q9I-bN-Qhd"/>
+                                            <exclude reference="z4L-Ug-xH5"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ContentLabel" destination="TcN-Yv-xFy" id="e3I-TD-FBh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -108,7 +138,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVp-Tw-T6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="431"/>
+            <point key="canvasLocation" x="890" y="424"/>
         </scene>
         <!--Item-->
         <scene sceneID="Z8Y-bt-prl">
