@@ -27,8 +27,8 @@ class INRootManager: NSObject {
     }
 
     func mainRoot() -> Void {
-        let tabController = INRootManager();
-//        self.myWindow.rootViewController = tabController
+        let tabController = INTabbarController();
+        self.myWindow.rootViewController = tabController
     }
 
     //MARK: Class Actions
@@ -45,6 +45,10 @@ class INRootManager: NSObject {
 
     class func mainWidow() -> UIWindow {
         let app = UIApplication.sharedApplication()
-        return app.keyWindow;
+        if let window = app.delegate?.window {
+            return window!
+        }else {
+            return app.keyWindow
+        }
     }
 }

@@ -1,52 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NjH-Yl-XuU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Login Controller-->
-        <scene sceneID="g7R-5W-bRX">
+        <scene sceneID="ema-EG-o2c">
             <objects>
-                <viewController id="NjH-Yl-XuU" customClass="INLoginController" customModule="intimate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="INLoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Aj9-eC-ij2" customClass="INLoginController" customModule="intimate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="20v-Or-FEq"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vtd-3R-Pfb"/>
+                        <viewControllerLayoutGuide type="top" id="nLh-fV-sTD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zfs-mW-I6W"/>
                     </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="WlB-D8-S8i" customClass="TPKeyboardAvoidingScrollView">
+                    <view key="view" contentMode="scaleToFill" id="YOp-HG-wrS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-lS-Slg" userLabel="Float Labeled Text Field - accout" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="200" y="205" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-qW-Bi0" userLabel="Float Labeled Text Field - psw" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="200" y="251" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w2-CT-Lqq">
-                                <rect key="frame" x="200" y="308" width="200" height="30"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-j8-dtQ" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-OI-UCd" userLabel="Float Labeled Text Field - psw">
+                                        <rect key="frame" x="200" y="251" width="200" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAF-ao-U8w">
+                                        <rect key="frame" x="200" y="308" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-98-fX7" userLabel="Float Labeled Text Field - accout">
+                                        <rect key="frame" x="200" y="213" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="dhE-Zf-k5f"/>
+                                            <constraint firstAttribute="height" constant="30" id="xtN-Mw-ycN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="登录">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                                <constraints>
+                                    <constraint firstItem="6ju-98-fX7" firstAttribute="height" secondItem="9Uj-OI-UCd" secondAttribute="height" id="1qi-3t-rzY"/>
+                                    <constraint firstAttribute="centerX" secondItem="6ju-98-fX7" secondAttribute="centerX" multiplier="16:9" id="67R-88-sev"/>
+                                    <constraint firstItem="6ju-98-fX7" firstAttribute="width" secondItem="9Uj-OI-UCd" secondAttribute="width" id="HJu-Ah-sqv"/>
+                                    <constraint firstAttribute="centerX" secondItem="CAF-ao-U8w" secondAttribute="centerX" multiplier="16:9" id="K2m-Da-fMP"/>
+                                    <constraint firstAttribute="centerX" secondItem="9Uj-OI-UCd" secondAttribute="centerX" multiplier="16:9" id="yhb-9v-anI"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
-                    </scrollView>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <connections>
-                        <outlet property="accountTextField" destination="OZP-lS-Slg" id="GIs-4g-DbS"/>
-                        <outlet property="backgroundScroollView" destination="WlB-D8-S8i" id="KXP-qw-96h"/>
-                        <outlet property="loginButton" destination="2w2-CT-Lqq" id="INA-ou-xzs"/>
-                        <outlet property="passwordTextField" destination="4rc-qW-Bi0" id="lht-KQ-1cp"/>
+                        <outlet property="accountTextField" destination="6ju-98-fX7" id="XGy-e3-ddA"/>
+                        <outlet property="backgroundScroollView" destination="ifX-j8-dtQ" id="6y7-jp-Wfh"/>
+                        <outlet property="loginButton" destination="CAF-ao-U8w" id="pma-pE-Eti"/>
+                        <outlet property="passwordTextField" destination="9Uj-OI-UCd" id="opl-fu-Hxp"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHO-Zq-Hit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ED5-Ay-VxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347" y="448"/>
+            <point key="canvasLocation" x="389" y="436"/>
         </scene>
     </scenes>
 </document>

@@ -12,13 +12,13 @@ class INLoginController: UIViewController, UITextFieldDelegate {
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        fatalError("init(coder:) has not been implemented")
+        //fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: Properties
     @IBOutlet var backgroundScroollView: TPKeyboardAvoidingScrollView?
-    @IBOutlet var accountTextField: JVFloatLabeledTextField?
-    @IBOutlet var passwordTextField: JVFloatLabeledTextField?
+    @IBOutlet var accountTextField: UITextField?
+    @IBOutlet var passwordTextField: UITextField?
     @IBOutlet var loginButton: UIButton?
 
     // Mark: View Life Cycle
@@ -43,7 +43,7 @@ class INLoginController: UIViewController, UITextFieldDelegate {
         loginButton!.layer.cornerRadius = 5
         loginButton!.layer.borderWidth = 1.0
         loginButton!.layer.borderColor = UIColor.whiteColor().CGColor
-        loginButton!.addTarget(self, action:"loginAction", forControlEvents:.TouchUpInside)
+        loginButton!.addTarget(self, action: Selector(loginAction()), forControlEvents:UIControlEvents.TouchUpInside)
     }
 
     //MARK: UITextfieldDelegate
@@ -58,7 +58,7 @@ class INLoginController: UIViewController, UITextFieldDelegate {
 
     // MARK: Actions
     func loginAction() {
-//        let rootManager = SKRootManager.sharedInstance()
-//        rootManager.mainRoot()
+        let rootManager = INRootManager.sharedInstance()
+        rootManager.mainRoot()
     }
 }
