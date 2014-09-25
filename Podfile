@@ -12,3 +12,6 @@ pod "AFNetworking", "~> 2.0"
 ## UI Controls
 pod 'TPKeyboardAvoiding'
 pod 'JVFloatLabeledTextField'
+
+##Core Data
+pod 'MagicalRecord'

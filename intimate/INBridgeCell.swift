@@ -18,5 +18,4 @@ class INBridgeCell: UITableViewCell {
         var labelWidth = ContentLabel?.frame.size.width
         NSLog("hello")
     }
-
 }
