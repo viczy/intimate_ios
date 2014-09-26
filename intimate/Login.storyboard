@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Login Controller-->
@@ -17,24 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-j8-dtQ" customClass="TPKeyboardAvoidingScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-j8-dtQ" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-OI-UCd" userLabel="Float Labeled Text Field - psw">
-                                        <rect key="frame" x="200" y="251" width="200" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAF-ao-U8w">
-                                        <rect key="frame" x="200" y="308" width="200" height="30"/>
-                                        <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
-                                        <state key="normal" title="登录">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-98-fX7" userLabel="Float Labeled Text Field - accout">
-                                        <rect key="frame" x="200" y="213" width="200" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-98-fX7" userLabel="Float Labeled Text Field - accout">
+                                        <rect key="frame" x="200" y="245" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="dhE-Zf-k5f"/>
                                             <constraint firstAttribute="height" constant="30" id="xtN-Mw-ycN"/>
@@ -42,18 +29,41 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-OI-UCd" userLabel="Float Labeled Text Field - psw">
+                                        <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAF-ao-U8w">
+                                        <rect key="frame" x="200" y="345" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.03529411927" green="0.81176477670000002" blue="0.9450981021" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstItem="6ju-98-fX7" firstAttribute="height" secondItem="9Uj-OI-UCd" secondAttribute="height" id="1qi-3t-rzY"/>
-                                    <constraint firstAttribute="centerX" secondItem="6ju-98-fX7" secondAttribute="centerX" multiplier="16:9" id="67R-88-sev"/>
+                                    <constraint firstItem="CAF-ao-U8w" firstAttribute="top" secondItem="9Uj-OI-UCd" secondAttribute="bottom" constant="30" id="2g0-h4-hEf"/>
+                                    <constraint firstAttribute="centerX" secondItem="6ju-98-fX7" secondAttribute="centerX" id="67R-88-sev"/>
+                                    <constraint firstAttribute="centerY" secondItem="9Uj-OI-UCd" secondAttribute="centerY" id="Ciw-Bg-B0a"/>
                                     <constraint firstItem="6ju-98-fX7" firstAttribute="width" secondItem="9Uj-OI-UCd" secondAttribute="width" id="HJu-Ah-sqv"/>
-                                    <constraint firstAttribute="centerX" secondItem="CAF-ao-U8w" secondAttribute="centerX" multiplier="16:9" id="K2m-Da-fMP"/>
-                                    <constraint firstAttribute="centerX" secondItem="9Uj-OI-UCd" secondAttribute="centerX" multiplier="16:9" id="yhb-9v-anI"/>
+                                    <constraint firstAttribute="centerX" secondItem="CAF-ao-U8w" secondAttribute="centerX" id="K2m-Da-fMP"/>
+                                    <constraint firstItem="9Uj-OI-UCd" firstAttribute="top" secondItem="6ju-98-fX7" secondAttribute="bottom" constant="10" id="Ua4-jI-Yuc"/>
+                                    <constraint firstItem="CAF-ao-U8w" firstAttribute="width" secondItem="6ju-98-fX7" secondAttribute="width" id="hhQ-GK-Gsa"/>
+                                    <constraint firstAttribute="centerX" secondItem="9Uj-OI-UCd" secondAttribute="centerX" id="yhb-9v-anI"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="right" secondItem="ifX-j8-dtQ" secondAttribute="right" id="3dh-92-hxF"/>
+                            <constraint firstItem="ifX-j8-dtQ" firstAttribute="top" secondItem="YOp-HG-wrS" secondAttribute="top" id="5L4-Uc-bSk"/>
+                            <constraint firstItem="Zfs-mW-I6W" firstAttribute="top" secondItem="ifX-j8-dtQ" secondAttribute="bottom" id="BWM-sd-Gbz"/>
+                            <constraint firstItem="ifX-j8-dtQ" firstAttribute="left" secondItem="YOp-HG-wrS" secondAttribute="left" id="Li5-BK-saW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="accountTextField" destination="6ju-98-fX7" id="XGy-e3-ddA"/>
