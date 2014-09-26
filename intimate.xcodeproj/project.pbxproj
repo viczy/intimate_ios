@@ -28,6 +28,8 @@
 		F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */; };
 		F96E34FE19D2CE9200DD3249 /* INBridgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */; };
 		F9CECA5619D4FEC300D0986E /* INKLoginDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */; };
+		F9D3ABA019D511D000E928E0 /* INKHTTPRequestOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3AB9F19D511D000E928E0 /* INKHTTPRequestOperationManager.swift */; };
+		F9D3ABA219D513DD00E928E0 /* INKLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3ABA119D513DD00E928E0 /* INKLoginProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeController.swift; sourceTree = "<group>"; };
 		F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeCell.swift; sourceTree = "<group>"; };
 		F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKLoginDataProvider.swift; sourceTree = "<group>"; };
+		F9D3AB9F19D511D000E928E0 /* INKHTTPRequestOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKHTTPRequestOperationManager.swift; sourceTree = "<group>"; };
+		F9D3ABA119D513DD00E928E0 /* INKLoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKLoginProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,8 @@
 		F95243C919D4041D0087A4D2 /* intimateKit */ = {
 			isa = PBXGroup;
 			children = (
-				F95243CC19D410930087A4D2 /* INKHTTPSessionManager.swift */,
-				F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */,
+				F9D3AB9E19D5119300E928E0 /* Operation */,
+				F9D3AB9D19D5105700E928E0 /* Session */,
 			);
 			path = intimateKit;
 			sourceTree = "<group>";
@@ -274,6 +278,24 @@
 			name = BridgeCell;
 			sourceTree = "<group>";
 		};
+		F9D3AB9D19D5105700E928E0 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F95243CC19D410930087A4D2 /* INKHTTPSessionManager.swift */,
+				F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		F9D3AB9E19D5119300E928E0 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				F9D3AB9F19D511D000E928E0 /* INKHTTPRequestOperationManager.swift */,
+				F9D3ABA119D513DD00E928E0 /* INKLoginProvider.swift */,
+			);
+			name = Operation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,12 +440,14 @@
 				F96E34E019CFD61400DD3249 /* INRootManager.swift in Sources */,
 				F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */,
 				F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */,
+				F9D3ABA219D513DD00E928E0 /* INKLoginProvider.swift in Sources */,
 				F9CECA5619D4FEC300D0986E /* INKLoginDataProvider.swift in Sources */,
 				F96E34E719D25AB400DD3249 /* INTabbarController.swift in Sources */,
 				F96E34B219CFC11200DD3249 /* intimate.xcdatamodeld in Sources */,
 				F96E34DC19CFCCC000DD3249 /* INLoginController.swift in Sources */,
 				F96E34FE19D2CE9200DD3249 /* INBridgeCell.swift in Sources */,
 				F96E34AF19CFC11100DD3249 /* AppDelegate.swift in Sources */,
+				F9D3ABA019D511D000E928E0 /* INKHTTPRequestOperationManager.swift in Sources */,
 				F95243CD19D410930087A4D2 /* INKHTTPSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = intimate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/intimate/intimate-Bridging-Header.h";
@@ -561,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = intimate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/intimate/intimate-Bridging-Header.h";

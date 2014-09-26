@@ -38,28 +38,37 @@ class INLoginController: UIViewController, UITextFieldDelegate {
         NSLog("%@", self.view.description)
         accountTextField!.placeholder = "账号"
         accountTextField!.clearButtonMode = .WhileEditing
+        accountTextField!.delegate = self
         passwordTextField!.placeholder = "密码"
         passwordTextField!.clearButtonMode = .WhileEditing
+        passwordTextField!.delegate = self
         loginButton!.enabled = false
         loginButton!.layer.cornerRadius = 5
         loginButton!.layer.borderWidth = 1.0
         loginButton!.layer.borderColor = UIColor.whiteColor().CGColor
-//        loginButton!.addTarget(self, action: Selector(loginAction()), forControlEvents:UIControlEvents.TouchUpInside)
+        loginButton!.addTarget(self, action: "loginAction", forControlEvents:UIControlEvents.TouchUpInside)
     }
 
     //MARK: UITextfieldDelegate
-    func textFieldDidEndEditing() {
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if accountTextField!.text.isEmpty || passwordTextField!.text.isEmpty
         {
             loginButton!.enabled = false
         } else {
             loginButton!.enabled = true
         }
+        return true
     }
 
     // MARK: Actions
     func loginAction() {
-        let rootManager = INRootManager.sharedInstance()
-        rootManager.mainRoot()
+        INKLoginProvider.login(accountTextField!.text, password: passwordTextField!.text, success: {
+            response in
+            NSLog("success")
+        }) { error in
+            NSLog("%@",error.localizedDescription)
+        }
+//        let rootManager = INRootManager.sharedInstance()
+//        rootManager.mainRoot()
     }
 }

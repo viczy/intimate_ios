@@ -8,14 +8,14 @@
 
 import Foundation
 
-class INKLoginDataProvider : NSObject {
-    func login (accout:NSString, password:NSString) {
-        return INKHTTPSessionManager.sharedClient().POST(URLString: "", parameters: nil, constructingBodyWithBlock: { (data:AFMultipartFormData!) -> Void in
-            //
-            }, success: { (task:NSURLSessionDataTask, json:NSObject) -> Void in
-            //
-            }, failure: { (task:NSURLSessionDataTask, error:NSError) -> Void in
-            //
-        })
-    }
-}
+//class INKLoginDataProvider : NSObject {
+//    func login (accout:NSString, password:NSString) {
+//        return INKHTTPSessionManager.sharedClient().POST("/users", parameters: nil, constructingBodyWithBlock: { (data:AFMultipartFormData!) -> Void in
+//            //
+//            }, success: { (task:NSURLSessionDataTask, json:NSObject) -> Void in
+//            //
+//            }, failure: { (task:NSURLSessionDataTask, error:NSError) -> Void in
+//            //
+//        })
+//    }
+//}
