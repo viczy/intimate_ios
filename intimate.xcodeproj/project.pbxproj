@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BAF2571D67F94C25BCE4886C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C6A1F8684449EA91EB93CD /* libPods.a */; };
 		F95243CD19D410930087A4D2 /* INKHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95243CC19D410930087A4D2 /* INKHTTPSessionManager.swift */; };
+		F96C561A19D7F69100116272 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F96C561919D7F69100116272 /* 123.jpg */; };
 		F96E34AF19CFC11100DD3249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34AE19CFC11100DD3249 /* AppDelegate.swift */; };
 		F96E34B219CFC11200DD3249 /* intimate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96E34B019CFC11100DD3249 /* intimate.xcdatamodeld */; };
 		F96E34B719CFC11200DD3249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96E34B519CFC11200DD3249 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		95C6A1F8684449EA91EB93CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC334F01FB7C4CE29AA8109D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F95243CC19D410930087A4D2 /* INKHTTPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKHTTPSessionManager.swift; sourceTree = "<group>"; };
+		F96C561919D7F69100116272 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
 		F96E34A919CFC11100DD3249 /* intimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96E34AD19CFC11100DD3249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96E34AE19CFC11100DD3249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		F96E34EB19D29F1E00DD3249 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F96C561919D7F69100116272 /* 123.jpg */,
 				F96E34F219D2AF3E00DD3249 /* tabbar_bridge@2x.png */,
 				F96E34EC19D29F1E00DD3249 /* tabbar_honey@2x.png */,
 				F96E34ED19D29F1E00DD3249 /* tabbar_me@2x.png */,
@@ -384,6 +387,7 @@
 				F96E34BC19CFC11200DD3249 /* LaunchScreen.xib in Resources */,
 				F96E34E219D1737200DD3249 /* Login.storyboard in Resources */,
 				F96E34E919D29DE700DD3249 /* Images.bundle in Resources */,
+				F96C561A19D7F69100116272 /* 123.jpg in Resources */,
 				F96E34B919CFC11200DD3249 /* Images.xcassets in Resources */,
 				F96E34EF19D29F1E00DD3249 /* tabbar_me@2x.png in Resources */,
 			);
