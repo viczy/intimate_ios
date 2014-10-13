@@ -28,6 +28,7 @@
 		F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34F519D2C0C400DD3249 /* INColor.swift */; };
 		F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */; };
 		F96E34FE19D2CE9200DD3249 /* INBridgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */; };
+		F980958319EB7AAA009CE48A /* INRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F980958219EB7AAA009CE48A /* INRegisterController.swift */; };
 		F9CECA5619D4FEC300D0986E /* INKLoginDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */; };
 		F9D3ABA019D511D000E928E0 /* INKHTTPRequestOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3AB9F19D511D000E928E0 /* INKHTTPRequestOperationManager.swift */; };
 		F9D3ABA219D513DD00E928E0 /* INKLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D3ABA119D513DD00E928E0 /* INKLoginProvider.swift */; };
@@ -71,6 +72,7 @@
 		F96E34F519D2C0C400DD3249 /* INColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INColor.swift; sourceTree = "<group>"; };
 		F96E34FA19D2CDD700DD3249 /* INBridgeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeController.swift; sourceTree = "<group>"; };
 		F96E34FD19D2CE9200DD3249 /* INBridgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INBridgeCell.swift; sourceTree = "<group>"; };
+		F980958219EB7AAA009CE48A /* INRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INRegisterController.swift; sourceTree = "<group>"; };
 		F9CECA5519D4FEC300D0986E /* INKLoginDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKLoginDataProvider.swift; sourceTree = "<group>"; };
 		F9D3AB9F19D511D000E928E0 /* INKHTTPRequestOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKHTTPRequestOperationManager.swift; sourceTree = "<group>"; };
 		F9D3ABA119D513DD00E928E0 /* INKLoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INKLoginProvider.swift; sourceTree = "<group>"; };
@@ -180,7 +182,7 @@
 				F96E34F719D2CB7E00DD3249 /* Bridge */,
 				F96E34E319D25A3A00DD3249 /* Tabbar */,
 				F96E34DE19CFD5F300DD3249 /* Manager */,
-				F96E34D619CFC85E00DD3249 /* Login */,
+				F96E34D619CFC85E00DD3249 /* Login&Register */,
 				F96E34D219CFC73100DD3249 /* AppDelegate */,
 			);
 			name = Controller;
@@ -221,12 +223,13 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		F96E34D619CFC85E00DD3249 /* Login */ = {
+		F96E34D619CFC85E00DD3249 /* Login&Register */ = {
 			isa = PBXGroup;
 			children = (
 				F96E34DB19CFCCC000DD3249 /* INLoginController.swift */,
+				F980958219EB7AAA009CE48A /* INRegisterController.swift */,
 			);
-			name = Login;
+			name = "Login&Register";
 			sourceTree = "<group>";
 		};
 		F96E34DE19CFD5F300DD3249 /* Manager */ = {
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F96E34F119D2A3F300DD3249 /* README.md in Sources */,
+				F980958319EB7AAA009CE48A /* INRegisterController.swift in Sources */,
 				F96E34E019CFD61400DD3249 /* INRootManager.swift in Sources */,
 				F96E34F619D2C0C400DD3249 /* INColor.swift in Sources */,
 				F96E34FB19D2CDD700DD3249 /* INBridgeController.swift in Sources */,

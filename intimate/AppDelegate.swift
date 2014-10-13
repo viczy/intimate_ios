@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-//        var rootManager = INRootManager.sharedInstance()
-//        rootManager.loginRoot()
+        var rootManager = INRootManager.sharedInstance()
+        rootManager.loginRoot()
         applyStylesheet()
 
         return true
@@ -115,10 +115,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applyStylesheet () {
         //navigationbar
-        UINavigationBar.appearance().barTintColor = UIColor.earthRed()
+        UINavigationBar.appearance().barTintColor = UIColor.skyBlue()
 
         //tabbar
-        UITabBar.appearance().barTintColor = UIColor.skyBlue()
+        UITabBar.appearance().barTintColor = UIColor.earthRed()
+
+        //baritem
+        UIBarButtonItem.appearance().tintColor = UIColor.earthRed()
     }
 
 }

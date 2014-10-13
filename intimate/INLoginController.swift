@@ -16,10 +16,10 @@ class INLoginController: UIViewController, UITextFieldDelegate {
     }
 
     // MARK: Properties
-    @IBOutlet var backgroundScroollView: TPKeyboardAvoidingScrollView?
-    @IBOutlet var accountTextField: UITextField?
-    @IBOutlet var passwordTextField: UITextField?
-    @IBOutlet var loginButton: UIButton?
+    @IBOutlet var backgroundScroollView: TPKeyboardAvoidingScrollView!
+    @IBOutlet var accountTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var loginButton: UIButton!
 
     // Mark: View Life Cycle
     override func viewDidLoad() {
@@ -36,33 +36,33 @@ class INLoginController: UIViewController, UITextFieldDelegate {
     // MARK: Configuration
     func configureSubView() {
         NSLog("%@", self.view.description)
-        accountTextField!.placeholder = "账号"
-        accountTextField!.clearButtonMode = .WhileEditing
-        accountTextField!.delegate = self
-        passwordTextField!.placeholder = "密码"
-        passwordTextField!.clearButtonMode = .WhileEditing
-        passwordTextField!.delegate = self
-        loginButton!.enabled = false
-        loginButton!.layer.cornerRadius = 5
-        loginButton!.layer.borderWidth = 1.0
-        loginButton!.layer.borderColor = UIColor.whiteColor().CGColor
-        loginButton!.addTarget(self, action: "loginAction", forControlEvents:UIControlEvents.TouchUpInside)
+        accountTextField.placeholder = "账号"
+        accountTextField.clearButtonMode = .WhileEditing
+        accountTextField.delegate = self
+        passwordTextField.placeholder = "密码"
+        passwordTextField.clearButtonMode = .WhileEditing
+        passwordTextField.delegate = self
+        loginButton.enabled = false
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.borderWidth = 1.0
+        loginButton.layer.borderColor = UIColor.whiteColor().CGColor
+        loginButton.addTarget(self, action: "loginAction", forControlEvents:UIControlEvents.TouchUpInside)
     }
 
     //MARK: UITextfieldDelegate
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if accountTextField!.text.isEmpty || passwordTextField!.text.isEmpty
         {
-            loginButton!.enabled = false
+            loginButton.enabled = false
         } else {
-            loginButton!.enabled = true
+            loginButton.enabled = true
         }
         return true
     }
 
     // MARK: Actions
     func loginAction() {
-        INKLoginProvider.login(accountTextField!.text, password: passwordTextField!.text, success: {
+        INKLoginProvider.login(accountTextField.text, password: passwordTextField.text, success: {
             response in
             NSLog("success")
         }) { error in
