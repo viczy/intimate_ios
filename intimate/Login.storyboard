@@ -184,7 +184,13 @@
                             <constraint firstAttribute="centerX" secondItem="nwe-qq-4JZ" secondAttribute="centerX" id="qiO-Rj-bgd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="o4X-ja-Bu1"/>
+                    <navigationItem key="navigationItem" id="o4X-ja-Bu1">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Gxg-bw-r2x">
+                            <connections>
+                                <action selector="cancelItemAction" destination="WN6-xB-Q5D" id="4xG-tG-6qk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backgroundScrollview" destination="nwe-qq-4JZ" id="4di-Bn-BXT"/>
                         <outlet property="confirmPasswordTextfield" destination="ckP-am-nHr" id="j29-bE-V55"/>

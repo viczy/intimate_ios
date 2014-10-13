@@ -31,16 +31,41 @@ class INRegisterController: UIViewController, UITextFieldDelegate {
 
     // MARK: Configuration
     func configureSubView() {
+        emailTextfield.delegate = self
+        nicknameTextfield.delegate = self
+        passwordTextfield.delegate = self
+        confirmPasswordTextfield.delegate = self
         registerButton.enabled = false
         registerButton.layer.cornerRadius = 5
         registerButton.layer.borderWidth = 1.0
         registerButton.layer.borderColor = UIColor.whiteColor().CGColor
-        registerButton.addTarget(self, action: "loginAction", forControlEvents:UIControlEvents.TouchUpInside)
+        registerButton.addTarget(self, action: "registerAction", forControlEvents:UIControlEvents.TouchUpInside)
     }
 
 
-    func cancelItemAction() {
+    @IBAction func cancelItemAction() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    //MARK: UITextfieldDelegate
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if emailTextfield.text.isEmpty || nicknameTextfield.text.isEmpty || passwordTextfield.text.isEmpty || confirmPasswordTextfield.text.isEmpty
+        {
+            registerButton.enabled = false
+        } else {
+            registerButton.enabled = true
+        }
+        return true
+    }
+
+    // MARK: Actions
+    func registerAction() {
+        INKLoginProvider.register(emailTextfield.text, name: nicknameTextfield.text, password: passwordTextfield.text, confirmpwd: confirmPasswordTextfield.text, success: { response in
+            NSLog("success")
+        }) { error in
+            NSLog("%@",error.localizedDescription)
+        }
+//        let rootManager = INRootManager.sharedInstance()
+//        rootManager.mainRoot()
+    }
 }

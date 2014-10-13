@@ -51,7 +51,7 @@ class INLoginController: UIViewController, UITextFieldDelegate {
 
     //MARK: UITextfieldDelegate
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        if accountTextField!.text.isEmpty || passwordTextField!.text.isEmpty
+        if accountTextField.text.isEmpty || passwordTextField.text.isEmpty
         {
             loginButton.enabled = false
         } else {
