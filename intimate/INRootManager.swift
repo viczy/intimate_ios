@@ -48,7 +48,7 @@ class INRootManager: NSObject {
         if let window = app.delegate?.window {
             return window!
         }else {
-            return app.keyWindow
+            return app.keyWindow!
         }
     }
 }
